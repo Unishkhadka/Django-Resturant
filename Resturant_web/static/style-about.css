@@ -38,7 +38,7 @@
   margin-bottom: 20px;
 }
 span{
-  color: #feaf39;
+  color: #fea116;
 }
 .text p{
   font-size: 18px;
@@ -50,7 +50,7 @@ span{
 }
 .hire{
   font-size: 18px;
-  background: #feaf39;
+  background: #fea116;
   color: #fff;
   text-decoration: none;
   border: none;
@@ -60,5 +60,5 @@ span{
 }
 .hire:hover{
   background: #000;
-  border: 1px solid #feaf39;
+  border: 1px solid #fea116;
 }

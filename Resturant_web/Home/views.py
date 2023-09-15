@@ -25,5 +25,5 @@ def about(request):
      # return HttpResponse("This is about page.")
 
 def services(request):
-     return render(request, 'serviceS.html')
+     return render(request, 'services.html')
     # return HttpResponse("This is services page.")

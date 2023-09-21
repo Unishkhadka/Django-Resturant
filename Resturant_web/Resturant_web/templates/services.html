@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block title %}Services{% endblock title %}
+
+{% block body %}
+
+<link rel="stylesheet" href="static/style-services.css">
+<link rel="stylesheet" href="static/style-services-2.css">
+<div class="container-fluid">
+      <img class="serv-img" src="/static/img/services.jpg" width="100%" height="auto">
+      <!-- <img src="https://source.unsplash.com/1600x490/?steak" class="d-block w-100" alt="..."> -->
+  </div>
+  <div class="container px-4 py-5" id="hanging-icons">
+    <h2 class="pb-2 border-bottom head">Our Services</h2>
+    <div class="rows row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <a class="f-link" href="/food"> <!-- Add anchor tag here -->
+      <div class="column-1 col d-flex align-items-start" >
+               <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+        <img src="static/img/burger.svg" width="36px" height="36px">
+        </div>
+        <div>
+          <h3 class="fs-2 text-body-emphasis">Food</h3>
+          <p>Food, like life itself, is a tapestry of flavors, textures, and experiences woven together by the hands of time and culture.</p>
+          <!-- <a href="#" class="btn button"> -->
+          <!--   Primary button -->
+          <!-- </a> -->
+        </div>
+      </div>
+      </a>
+      <a class="d-link" href="/drinks">
+      <div class="column-2 col d-flex align-items-start" href="/drinks">
+        <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+          <img src="static/img/beer.svg" width="36px" height="36px">
+        </div>
+        <div>
+          <h3 class="fs-2 text-body-emphasis">Drinks</h3>
+          <p>Drinks, whether they quench our thirst or warm our spirits, are liquid tales of human creativity and indulgence.</p>
+          <!-- <a href="#" class="btn button"> -->
+          <!--   Primary button -->
+          <!-- </a> -->
+        </div>
+      </div>
+      </a>
+      <div class="column-3 col d-flex align-items-start">
+        <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+          <img src="static/img/cart.svg" width="36px" height="36px">
+        </div>
+        <div>
+          <h3 class="fs-2 text-body-emphasis">Delivery</h3>
+          <p>Online delivery, where the click of a button transforms cravings into a culinary journey arriving at your doorstep.</p>
+          <!-- <a href="#" class="btn button"> -->
+          <!--   Primary button -->
+          <!-- </a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock body %}

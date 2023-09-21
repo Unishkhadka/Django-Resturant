@@ -1,0 +1,42 @@
+
+{% extends 'base.html' %}
+
+{% block title %}Contact{% endblock title %}
+
+{% block body %}
+<div class="container-fluid my-4">
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="/static/img/contact.jpg" class="d-block w-100" alt="...">
+       </div>
+   </div>
+</div>
+</div>
+<div class="container">
+
+  <form method="POST" action="/contact">
+    {% csrf_token %}
+<div class="mx-5 my-1">
+  <label for="name" class="form-label">Name:</label>
+  <input type="text" class="form-control form-control-lg" id="name" name="name" placeholder="Name">
+</div>
+<div class="mx-5">
+  <label for="email" class="form-label">Email address:</label>
+  <input type="email" class="form-control form-control-lg" id="email" name="email" placeholder="name@example.com">
+</div>
+<div class="mx-5">
+  <label for="phone" class="form-label">Phone Number:</label>
+  <input type="text" class="form-control form-control-lg" id="phone" name="phone" placeholder="">
+</div>
+<div class="mx-5 my-1">
+  <label for="cmnt" class="form-label">Comment:</label>
+  <textarea class="form-control" id="cmnt" name="cmnt" placeholder="Comment"rows="3"></textarea>
+</div>
+<div class="d-grid gap-2 d-md-flex justify-content-md-end mx-5 my-2">
+  <button class="btn btn-primary me-md-2" type="submit">Submit</button>
+</div>
+</form>
+</div>
+{% endblock body %}
+   
